@@ -1,0 +1,594 @@
+The system is: Linux - 3.10.0-1160.83.1.el7.x86_64 - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/gcc 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/afs/cern.ch/user/h/handerso/GEANT4FINAL/TRD_Build/CMakeFiles/3.17.2/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/g++ 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/afs/cern.ch/user/h/handerso/GEANT4FINAL/TRD_Build/CMakeFiles/3.17.2/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /afs/cern.ch/user/h/handerso/GEANT4FINAL/TRD_Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_2871a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2871a.dir/build.make CMakeFiles/cmTC_2871a.dir/build
+gmake[1]: Entering directory `/afs/cern.ch/user/h/handerso/GEANT4FINAL/TRD_Build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2871a.dir/testCCompiler.c.o
+/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/gcc    -o CMakeFiles/cmTC_2871a.dir/testCCompiler.c.o   -c /afs/cern.ch/user/h/handerso/GEANT4FINAL/TRD_Build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_2871a
+/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/cmake/3.17.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2871a.dir/link.txt --verbose=1
+/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/gcc      CMakeFiles/cmTC_2871a.dir/testCCompiler.c.o  -o cmTC_2871a 
+gmake[1]: Leaving directory `/afs/cern.ch/user/h/handerso/GEANT4FINAL/TRD_Build/CMakeFiles/CMakeTmp'
+
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /afs/cern.ch/user/h/handerso/GEANT4FINAL/TRD_Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_de51f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_de51f.dir/build.make CMakeFiles/cmTC_de51f.dir/build
+gmake[1]: Entering directory `/afs/cern.ch/user/h/handerso/GEANT4FINAL/TRD_Build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_de51f.dir/CMakeCCompilerABI.c.o
+/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/gcc   -v -o CMakeFiles/cmTC_de51f.dir/CMakeCCompilerABI.c.o   -c /cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/cmake/3.17.2/share/cmake-3.17/Modules/CMakeCCompilerABI.c
+Using built-in specs.
+COLLECT_GCC=/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/gcc
+Target: x86_64-unknown-linux-gnu
+Configured with: ../configure --prefix=/build/muz/g10/w/tmp/BUILDROOT/6af2184a61ae4a90cb849a228a342f29/opt/cmssw/slc7_amd64_gcc10/external/gcc/10.2.0 --disable-multilib --disable-nls --disable-dssi --enable-languages=c,c++,fortran --enable-gnu-indirect-function --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-plugin --with-linker-hash-style=gnu --enable-linker-build-id --enable-ld=default --enable-lto --enable-gold=yes --with-gmp=/build/muz/g10/w/tmp/BUILDROOT/6af2184a61ae4a90cb849a228a342f29/opt/cmssw/slc7_amd64_gcc10/external/gcc/10.2.0 --with-mpfr=/build/muz/g10/w/tmp/BUILDROOT/6af2184a61ae4a90cb849a228a342f29/opt/cmssw/slc7_amd64_gcc10/external/gcc/10.2.0 --enable-bootstrap --with-mpc=/build/muz/g10/w/tmp/BUILDROOT/6af2184a61ae4a90cb849a228a342f29/opt/cmssw/slc7_amd64_gcc10/external/gcc/10.2.0 --with-isl=/build/muz/g10/w/tmp/BUILDROOT/6af2184a61ae4a90cb849a228a342f29/opt/cmssw/slc7_amd64_gcc10/external/gcc/10.2.0 --enable-checking=release --build=x86_64-unknown-linux-gnu --host=x86_64-unknown-linux-gnu --enable-libstdcxx-time=rt --enable-shared --disable-libgcj CC='gcc -fPIC' CXX='c++ -fPIC' CPP=cpp CXXCPP='c++ -E' CFLAGS=-I/build/muz/g10/w/tmp/BUILDROOT/6af2184a61ae4a90cb849a228a342f29/opt/cmssw/slc7_amd64_gcc10/external/gcc/10.2.0/tmp/sw/include CXXFLAGS=-I/build/muz/g10/w/tmp/BUILDROOT/6af2184a61ae4a90cb849a228a342f29/opt/cmssw/slc7_amd64_gcc10/external/gcc/10.2.0/tmp/sw/include LDFLAGS=-L/build/muz/g10/w/tmp/BUILDROOT/6af2184a61ae4a90cb849a228a342f29/opt/cmssw/slc7_amd64_gcc10/external/gcc/10.2.0/tmp/sw/lib
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 10.2.1 20200803 (GCC) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_de51f.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+ /cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../libexec/gcc/x86_64-unknown-linux-gnu/10.2.1/cc1 -quiet -v -iprefix /cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/ -isystem /cvmfs/sft.cern.ch/lcg/releases/gcc/10.3.0-f5826/x86_64-centos7/include /cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/cmake/3.17.2/share/cmake-3.17/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_de51f.dir/CMakeCCompilerABI.c.o -version -o /tmp/handerso/ccxKWv89.s
+GNU C17 (GCC) version 10.2.1 20200803 (x86_64-unknown-linux-gnu)
+	compiled by GNU C version 10.2.1 20200803, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../../x86_64-unknown-linux-gnu/include"
+ignoring duplicate directory "/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/include"
+ignoring duplicate directory "/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/include-fixed"
+ignoring nonexistent directory "/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../../x86_64-unknown-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /cvmfs/sft.cern.ch/lcg/releases/gcc/10.3.0-f5826/x86_64-centos7/include
+ /cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/include
+ /cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/include-fixed
+ /usr/local/include
+ /cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/../../include
+ /usr/include
+End of search list.
+GNU C17 (GCC) version 10.2.1 20200803 (x86_64-unknown-linux-gnu)
+	compiled by GNU C version 10.2.1 20200803, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 238082d01863141f430491a004f78055
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_de51f.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+ /cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../../x86_64-unknown-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_de51f.dir/CMakeCCompilerABI.c.o /tmp/handerso/ccxKWv89.s
+GNU assembler version 2.32 (x86_64-unknown-linux-gnu) using BFD version (GNU Binutils) 2.32
+COMPILER_PATH=/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../libexec/gcc/x86_64-unknown-linux-gnu/10.2.1/:/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../libexec/gcc/:/cvmfs/sft.cern.ch/lcg/releases/gcc/10.3.0-f5826/x86_64-centos7/:/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../../x86_64-unknown-linux-gnu/bin/
+LIBRARY_PATH=/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/:/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/:/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../../x86_64-unknown-linux-gnu/lib/:/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_de51f.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+Linking C executable cmTC_de51f
+/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/cmake/3.17.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_de51f.dir/link.txt --verbose=1
+/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/gcc     -v CMakeFiles/cmTC_de51f.dir/CMakeCCompilerABI.c.o  -o cmTC_de51f 
+Using built-in specs.
+COLLECT_GCC=/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/gcc
+COLLECT_LTO_WRAPPER=/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../libexec/gcc/x86_64-unknown-linux-gnu/10.2.1/lto-wrapper
+Target: x86_64-unknown-linux-gnu
+Configured with: ../configure --prefix=/build/muz/g10/w/tmp/BUILDROOT/6af2184a61ae4a90cb849a228a342f29/opt/cmssw/slc7_amd64_gcc10/external/gcc/10.2.0 --disable-multilib --disable-nls --disable-dssi --enable-languages=c,c++,fortran --enable-gnu-indirect-function --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-plugin --with-linker-hash-style=gnu --enable-linker-build-id --enable-ld=default --enable-lto --enable-gold=yes --with-gmp=/build/muz/g10/w/tmp/BUILDROOT/6af2184a61ae4a90cb849a228a342f29/opt/cmssw/slc7_amd64_gcc10/external/gcc/10.2.0 --with-mpfr=/build/muz/g10/w/tmp/BUILDROOT/6af2184a61ae4a90cb849a228a342f29/opt/cmssw/slc7_amd64_gcc10/external/gcc/10.2.0 --enable-bootstrap --with-mpc=/build/muz/g10/w/tmp/BUILDROOT/6af2184a61ae4a90cb849a228a342f29/opt/cmssw/slc7_amd64_gcc10/external/gcc/10.2.0 --with-isl=/build/muz/g10/w/tmp/BUILDROOT/6af2184a61ae4a90cb849a228a342f29/opt/cmssw/slc7_amd64_gcc10/external/gcc/10.2.0 --enable-checking=release --build=x86_64-unknown-linux-gnu --host=x86_64-unknown-linux-gnu --enable-libstdcxx-time=rt --enable-shared --disable-libgcj CC='gcc -fPIC' CXX='c++ -fPIC' CPP=cpp CXXCPP='c++ -E' CFLAGS=-I/build/muz/g10/w/tmp/BUILDROOT/6af2184a61ae4a90cb849a228a342f29/opt/cmssw/slc7_amd64_gcc10/external/gcc/10.2.0/tmp/sw/include CXXFLAGS=-I/build/muz/g10/w/tmp/BUILDROOT/6af2184a61ae4a90cb849a228a342f29/opt/cmssw/slc7_amd64_gcc10/external/gcc/10.2.0/tmp/sw/include LDFLAGS=-L/build/muz/g10/w/tmp/BUILDROOT/6af2184a61ae4a90cb849a228a342f29/opt/cmssw/slc7_amd64_gcc10/external/gcc/10.2.0/tmp/sw/lib
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 10.2.1 20200803 (GCC) 
+COMPILER_PATH=/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../libexec/gcc/x86_64-unknown-linux-gnu/10.2.1/:/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../libexec/gcc/:/cvmfs/sft.cern.ch/lcg/releases/gcc/10.3.0-f5826/x86_64-centos7/:/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../../x86_64-unknown-linux-gnu/bin/
+LIBRARY_PATH=/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/:/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/:/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../../x86_64-unknown-linux-gnu/lib/:/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_de51f' '-mtune=generic' '-march=x86-64'
+ /cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../libexec/gcc/x86_64-unknown-linux-gnu/10.2.1/collect2 -plugin /cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../libexec/gcc/x86_64-unknown-linux-gnu/10.2.1/liblto_plugin.so -plugin-opt=/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../libexec/gcc/x86_64-unknown-linux-gnu/10.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/handerso/ccqrwYyg.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z common-page-size=4096 -z max-page-size=4096 -o cmTC_de51f /lib/../lib64/crt1.o /lib/../lib64/crti.o /cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/crtbegin.o -L/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1 -L/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc -L/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../../x86_64-unknown-linux-gnu/lib -L/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../.. CMakeFiles/cmTC_de51f.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/crtend.o /lib/../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_de51f' '-mtune=generic' '-march=x86-64'
+gmake[1]: Leaving directory `/afs/cern.ch/user/h/handerso/GEANT4FINAL/TRD_Build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/cvmfs/sft.cern.ch/lcg/releases/gcc/10.3.0-f5826/x86_64-centos7/include]
+    add: [/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/include]
+    add: [/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/include-fixed]
+    add: [/usr/local/include]
+    add: [/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/../../include]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/cvmfs/sft.cern.ch/lcg/releases/gcc/10.3.0-f5826/x86_64-centos7/include] ==> [/cvmfs/sft.cern.ch/lcg/releases/gcc/10.3.0-f5826/x86_64-centos7/include]
+  collapse include dir [/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/include] ==> [/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/lib/gcc/x86_64-unknown-linux-gnu/10.2.1/include]
+  collapse include dir [/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/include-fixed] ==> [/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/lib/gcc/x86_64-unknown-linux-gnu/10.2.1/include-fixed]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/../../include] ==> [/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/include]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/cvmfs/sft.cern.ch/lcg/releases/gcc/10.3.0-f5826/x86_64-centos7/include;/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/lib/gcc/x86_64-unknown-linux-gnu/10.2.1/include;/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/lib/gcc/x86_64-unknown-linux-gnu/10.2.1/include-fixed;/usr/local/include;/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/include;/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /afs/cern.ch/user/h/handerso/GEANT4FINAL/TRD_Build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/gmake cmTC_de51f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_de51f.dir/build.make CMakeFiles/cmTC_de51f.dir/build]
+  ignore line: [gmake[1]: Entering directory `/afs/cern.ch/user/h/handerso/GEANT4FINAL/TRD_Build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_de51f.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/gcc   -v -o CMakeFiles/cmTC_de51f.dir/CMakeCCompilerABI.c.o   -c /cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/cmake/3.17.2/share/cmake-3.17/Modules/CMakeCCompilerABI.c]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/gcc]
+  ignore line: [Target: x86_64-unknown-linux-gnu]
+  ignore line: [Configured with: ../configure --prefix=/build/muz/g10/w/tmp/BUILDROOT/6af2184a61ae4a90cb849a228a342f29/opt/cmssw/slc7_amd64_gcc10/external/gcc/10.2.0 --disable-multilib --disable-nls --disable-dssi --enable-languages=c,c++,fortran --enable-gnu-indirect-function --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-plugin --with-linker-hash-style=gnu --enable-linker-build-id --enable-ld=default --enable-lto --enable-gold=yes --with-gmp=/build/muz/g10/w/tmp/BUILDROOT/6af2184a61ae4a90cb849a228a342f29/opt/cmssw/slc7_amd64_gcc10/external/gcc/10.2.0 --with-mpfr=/build/muz/g10/w/tmp/BUILDROOT/6af2184a61ae4a90cb849a228a342f29/opt/cmssw/slc7_amd64_gcc10/external/gcc/10.2.0 --enable-bootstrap --with-mpc=/build/muz/g10/w/tmp/BUILDROOT/6af2184a61ae4a90cb849a228a342f29/opt/cmssw/slc7_amd64_gcc10/external/gcc/10.2.0 --with-isl=/build/muz/g10/w/tmp/BUILDROOT/6af2184a61ae4a90cb849a228a342f29/opt/cmssw/slc7_amd64_gcc10/external/gcc/10.2.0 --enable-checking=release --build=x86_64-unknown-linux-gnu --host=x86_64-unknown-linux-gnu --enable-libstdcxx-time=rt --enable-shared --disable-libgcj CC='gcc -fPIC' CXX='c++ -fPIC' CPP=cpp CXXCPP='c++ -E' CFLAGS=-I/build/muz/g10/w/tmp/BUILDROOT/6af2184a61ae4a90cb849a228a342f29/opt/cmssw/slc7_amd64_gcc10/external/gcc/10.2.0/tmp/sw/include CXXFLAGS=-I/build/muz/g10/w/tmp/BUILDROOT/6af2184a61ae4a90cb849a228a342f29/opt/cmssw/slc7_amd64_gcc10/external/gcc/10.2.0/tmp/sw/include LDFLAGS=-L/build/muz/g10/w/tmp/BUILDROOT/6af2184a61ae4a90cb849a228a342f29/opt/cmssw/slc7_amd64_gcc10/external/gcc/10.2.0/tmp/sw/lib]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 10.2.1 20200803 (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_de51f.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../libexec/gcc/x86_64-unknown-linux-gnu/10.2.1/cc1 -quiet -v -iprefix /cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/ -isystem /cvmfs/sft.cern.ch/lcg/releases/gcc/10.3.0-f5826/x86_64-centos7/include /cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/cmake/3.17.2/share/cmake-3.17/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_de51f.dir/CMakeCCompilerABI.c.o -version -o /tmp/handerso/ccxKWv89.s]
+  ignore line: [GNU C17 (GCC) version 10.2.1 20200803 (x86_64-unknown-linux-gnu)]
+  ignore line: [	compiled by GNU C version 10.2.1 20200803  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../../x86_64-unknown-linux-gnu/include"]
+  ignore line: [ignoring duplicate directory "/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/include"]
+  ignore line: [ignoring duplicate directory "/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/include-fixed"]
+  ignore line: [ignoring nonexistent directory "/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../../x86_64-unknown-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /cvmfs/sft.cern.ch/lcg/releases/gcc/10.3.0-f5826/x86_64-centos7/include]
+  ignore line: [ /cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/include]
+  ignore line: [ /cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/include-fixed]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/../../include]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C17 (GCC) version 10.2.1 20200803 (x86_64-unknown-linux-gnu)]
+  ignore line: [	compiled by GNU C version 10.2.1 20200803  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 238082d01863141f430491a004f78055]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_de51f.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../../x86_64-unknown-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_de51f.dir/CMakeCCompilerABI.c.o /tmp/handerso/ccxKWv89.s]
+  ignore line: [GNU assembler version 2.32 (x86_64-unknown-linux-gnu) using BFD version (GNU Binutils) 2.32]
+  ignore line: [COMPILER_PATH=/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../libexec/gcc/x86_64-unknown-linux-gnu/10.2.1/:/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../libexec/gcc/:/cvmfs/sft.cern.ch/lcg/releases/gcc/10.3.0-f5826/x86_64-centos7/:/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../../x86_64-unknown-linux-gnu/bin/]
+  ignore line: [LIBRARY_PATH=/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/:/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/:/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../../x86_64-unknown-linux-gnu/lib/:/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_de51f.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [Linking C executable cmTC_de51f]
+  ignore line: [/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/cmake/3.17.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_de51f.dir/link.txt --verbose=1]
+  ignore line: [/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/gcc     -v CMakeFiles/cmTC_de51f.dir/CMakeCCompilerABI.c.o  -o cmTC_de51f ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/gcc]
+  ignore line: [COLLECT_LTO_WRAPPER=/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../libexec/gcc/x86_64-unknown-linux-gnu/10.2.1/lto-wrapper]
+  ignore line: [Target: x86_64-unknown-linux-gnu]
+  ignore line: [Configured with: ../configure --prefix=/build/muz/g10/w/tmp/BUILDROOT/6af2184a61ae4a90cb849a228a342f29/opt/cmssw/slc7_amd64_gcc10/external/gcc/10.2.0 --disable-multilib --disable-nls --disable-dssi --enable-languages=c,c++,fortran --enable-gnu-indirect-function --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-plugin --with-linker-hash-style=gnu --enable-linker-build-id --enable-ld=default --enable-lto --enable-gold=yes --with-gmp=/build/muz/g10/w/tmp/BUILDROOT/6af2184a61ae4a90cb849a228a342f29/opt/cmssw/slc7_amd64_gcc10/external/gcc/10.2.0 --with-mpfr=/build/muz/g10/w/tmp/BUILDROOT/6af2184a61ae4a90cb849a228a342f29/opt/cmssw/slc7_amd64_gcc10/external/gcc/10.2.0 --enable-bootstrap --with-mpc=/build/muz/g10/w/tmp/BUILDROOT/6af2184a61ae4a90cb849a228a342f29/opt/cmssw/slc7_amd64_gcc10/external/gcc/10.2.0 --with-isl=/build/muz/g10/w/tmp/BUILDROOT/6af2184a61ae4a90cb849a228a342f29/opt/cmssw/slc7_amd64_gcc10/external/gcc/10.2.0 --enable-checking=release --build=x86_64-unknown-linux-gnu --host=x86_64-unknown-linux-gnu --enable-libstdcxx-time=rt --enable-shared --disable-libgcj CC='gcc -fPIC' CXX='c++ -fPIC' CPP=cpp CXXCPP='c++ -E' CFLAGS=-I/build/muz/g10/w/tmp/BUILDROOT/6af2184a61ae4a90cb849a228a342f29/opt/cmssw/slc7_amd64_gcc10/external/gcc/10.2.0/tmp/sw/include CXXFLAGS=-I/build/muz/g10/w/tmp/BUILDROOT/6af2184a61ae4a90cb849a228a342f29/opt/cmssw/slc7_amd64_gcc10/external/gcc/10.2.0/tmp/sw/include LDFLAGS=-L/build/muz/g10/w/tmp/BUILDROOT/6af2184a61ae4a90cb849a228a342f29/opt/cmssw/slc7_amd64_gcc10/external/gcc/10.2.0/tmp/sw/lib]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 10.2.1 20200803 (GCC) ]
+  ignore line: [COMPILER_PATH=/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../libexec/gcc/x86_64-unknown-linux-gnu/10.2.1/:/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../libexec/gcc/:/cvmfs/sft.cern.ch/lcg/releases/gcc/10.3.0-f5826/x86_64-centos7/:/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../../x86_64-unknown-linux-gnu/bin/]
+  ignore line: [LIBRARY_PATH=/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/:/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/:/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../../x86_64-unknown-linux-gnu/lib/:/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_de51f' '-mtune=generic' '-march=x86-64']
+  link line: [ /cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../libexec/gcc/x86_64-unknown-linux-gnu/10.2.1/collect2 -plugin /cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../libexec/gcc/x86_64-unknown-linux-gnu/10.2.1/liblto_plugin.so -plugin-opt=/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../libexec/gcc/x86_64-unknown-linux-gnu/10.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/handerso/ccqrwYyg.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z common-page-size=4096 -z max-page-size=4096 -o cmTC_de51f /lib/../lib64/crt1.o /lib/../lib64/crti.o /cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/crtbegin.o -L/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1 -L/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc -L/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../../x86_64-unknown-linux-gnu/lib -L/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../.. CMakeFiles/cmTC_de51f.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/crtend.o /lib/../lib64/crtn.o]
+    arg [/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../libexec/gcc/x86_64-unknown-linux-gnu/10.2.1/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../libexec/gcc/x86_64-unknown-linux-gnu/10.2.1/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../libexec/gcc/x86_64-unknown-linux-gnu/10.2.1/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/handerso/ccqrwYyg.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-zcommon-page-size=4096] ==> ignore
+    arg [-zmax-page-size=4096] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_de51f] ==> ignore
+    arg [/lib/../lib64/crt1.o] ==> ignore
+    arg [/lib/../lib64/crti.o] ==> ignore
+    arg [/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/crtbegin.o] ==> ignore
+    arg [-L/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1] ==> dir [/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1]
+    arg [-L/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc] ==> dir [/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc]
+    arg [-L/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../../lib64] ==> dir [/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../../x86_64-unknown-linux-gnu/lib] ==> dir [/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../../x86_64-unknown-linux-gnu/lib]
+    arg [-L/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../..] ==> dir [/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../..]
+    arg [CMakeFiles/cmTC_de51f.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/crtend.o] ==> ignore
+    arg [/lib/../lib64/crtn.o] ==> ignore
+  collapse library dir [/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1] ==> [/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/lib/gcc/x86_64-unknown-linux-gnu/10.2.1]
+  collapse library dir [/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc] ==> [/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/lib/gcc]
+  collapse library dir [/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../../lib64] ==> [/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../../x86_64-unknown-linux-gnu/lib] ==> [/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/x86_64-unknown-linux-gnu/lib]
+  collapse library dir [/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../..] ==> [/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/lib]
+  implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+  implicit dirs: [/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/lib/gcc/x86_64-unknown-linux-gnu/10.2.1;/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/lib/gcc;/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/lib64;/lib64;/usr/lib64;/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/x86_64-unknown-linux-gnu/lib;/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/lib]
+  implicit fwks: []
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /afs/cern.ch/user/h/handerso/GEANT4FINAL/TRD_Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_2f81a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2f81a.dir/build.make CMakeFiles/cmTC_2f81a.dir/build
+gmake[1]: Entering directory `/afs/cern.ch/user/h/handerso/GEANT4FINAL/TRD_Build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_2f81a.dir/testCXXCompiler.cxx.o
+/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/g++     -o CMakeFiles/cmTC_2f81a.dir/testCXXCompiler.cxx.o -c /afs/cern.ch/user/h/handerso/GEANT4FINAL/TRD_Build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_2f81a
+/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/cmake/3.17.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2f81a.dir/link.txt --verbose=1
+/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/g++       CMakeFiles/cmTC_2f81a.dir/testCXXCompiler.cxx.o  -o cmTC_2f81a 
+gmake[1]: Leaving directory `/afs/cern.ch/user/h/handerso/GEANT4FINAL/TRD_Build/CMakeFiles/CMakeTmp'
+
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /afs/cern.ch/user/h/handerso/GEANT4FINAL/TRD_Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_a057f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a057f.dir/build.make CMakeFiles/cmTC_a057f.dir/build
+gmake[1]: Entering directory `/afs/cern.ch/user/h/handerso/GEANT4FINAL/TRD_Build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_a057f.dir/CMakeCXXCompilerABI.cpp.o
+/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/g++    -v -o CMakeFiles/cmTC_a057f.dir/CMakeCXXCompilerABI.cpp.o -c /cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/cmake/3.17.2/share/cmake-3.17/Modules/CMakeCXXCompilerABI.cpp
+Using built-in specs.
+COLLECT_GCC=/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/g++
+Target: x86_64-unknown-linux-gnu
+Configured with: ../configure --prefix=/build/muz/g10/w/tmp/BUILDROOT/6af2184a61ae4a90cb849a228a342f29/opt/cmssw/slc7_amd64_gcc10/external/gcc/10.2.0 --disable-multilib --disable-nls --disable-dssi --enable-languages=c,c++,fortran --enable-gnu-indirect-function --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-plugin --with-linker-hash-style=gnu --enable-linker-build-id --enable-ld=default --enable-lto --enable-gold=yes --with-gmp=/build/muz/g10/w/tmp/BUILDROOT/6af2184a61ae4a90cb849a228a342f29/opt/cmssw/slc7_amd64_gcc10/external/gcc/10.2.0 --with-mpfr=/build/muz/g10/w/tmp/BUILDROOT/6af2184a61ae4a90cb849a228a342f29/opt/cmssw/slc7_amd64_gcc10/external/gcc/10.2.0 --enable-bootstrap --with-mpc=/build/muz/g10/w/tmp/BUILDROOT/6af2184a61ae4a90cb849a228a342f29/opt/cmssw/slc7_amd64_gcc10/external/gcc/10.2.0 --with-isl=/build/muz/g10/w/tmp/BUILDROOT/6af2184a61ae4a90cb849a228a342f29/opt/cmssw/slc7_amd64_gcc10/external/gcc/10.2.0 --enable-checking=release --build=x86_64-unknown-linux-gnu --host=x86_64-unknown-linux-gnu --enable-libstdcxx-time=rt --enable-shared --disable-libgcj CC='gcc -fPIC' CXX='c++ -fPIC' CPP=cpp CXXCPP='c++ -E' CFLAGS=-I/build/muz/g10/w/tmp/BUILDROOT/6af2184a61ae4a90cb849a228a342f29/opt/cmssw/slc7_amd64_gcc10/external/gcc/10.2.0/tmp/sw/include CXXFLAGS=-I/build/muz/g10/w/tmp/BUILDROOT/6af2184a61ae4a90cb849a228a342f29/opt/cmssw/slc7_amd64_gcc10/external/gcc/10.2.0/tmp/sw/include LDFLAGS=-L/build/muz/g10/w/tmp/BUILDROOT/6af2184a61ae4a90cb849a228a342f29/opt/cmssw/slc7_amd64_gcc10/external/gcc/10.2.0/tmp/sw/lib
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 10.2.1 20200803 (GCC) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a057f.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../libexec/gcc/x86_64-unknown-linux-gnu/10.2.1/cc1plus -quiet -v -iprefix /cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/ -isystem /cvmfs/sft.cern.ch/lcg/releases/gcc/10.3.0-f5826/x86_64-centos7/include -D_GNU_SOURCE /cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/cmake/3.17.2/share/cmake-3.17/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_a057f.dir/CMakeCXXCompilerABI.cpp.o -version -fabi-version=0 -o /tmp/handerso/ccb2z5tv.s
+GNU C++14 (GCC) version 10.2.1 20200803 (x86_64-unknown-linux-gnu)
+	compiled by GNU C version 10.2.1 20200803, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../../x86_64-unknown-linux-gnu/include"
+ignoring duplicate directory "/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../../include/c++/10.2.1"
+ignoring duplicate directory "/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../../include/c++/10.2.1/x86_64-unknown-linux-gnu"
+ignoring duplicate directory "/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../../include/c++/10.2.1/backward"
+ignoring duplicate directory "/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/include"
+ignoring duplicate directory "/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/include-fixed"
+ignoring nonexistent directory "/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../../x86_64-unknown-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /cvmfs/sft.cern.ch/lcg/releases/gcc/10.3.0-f5826/x86_64-centos7/include
+ /cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../../include/c++/10.2.1
+ /cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../../include/c++/10.2.1/x86_64-unknown-linux-gnu
+ /cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../../include/c++/10.2.1/backward
+ /cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/include
+ /cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/include-fixed
+ /usr/local/include
+ /cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/../../include
+ /usr/include
+End of search list.
+GNU C++14 (GCC) version 10.2.1 20200803 (x86_64-unknown-linux-gnu)
+	compiled by GNU C version 10.2.1 20200803, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 1cbe278be5220506f693cd99f8934440
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a057f.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../../x86_64-unknown-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_a057f.dir/CMakeCXXCompilerABI.cpp.o /tmp/handerso/ccb2z5tv.s
+GNU assembler version 2.32 (x86_64-unknown-linux-gnu) using BFD version (GNU Binutils) 2.32
+COMPILER_PATH=/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../libexec/gcc/x86_64-unknown-linux-gnu/10.2.1/:/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../libexec/gcc/:/cvmfs/sft.cern.ch/lcg/releases/gcc/10.3.0-f5826/x86_64-centos7/:/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../../x86_64-unknown-linux-gnu/bin/
+LIBRARY_PATH=/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/:/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/:/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../../x86_64-unknown-linux-gnu/lib/:/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a057f.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+Linking CXX executable cmTC_a057f
+/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/cmake/3.17.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a057f.dir/link.txt --verbose=1
+/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/g++      -v CMakeFiles/cmTC_a057f.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_a057f 
+Using built-in specs.
+COLLECT_GCC=/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/g++
+COLLECT_LTO_WRAPPER=/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../libexec/gcc/x86_64-unknown-linux-gnu/10.2.1/lto-wrapper
+Target: x86_64-unknown-linux-gnu
+Configured with: ../configure --prefix=/build/muz/g10/w/tmp/BUILDROOT/6af2184a61ae4a90cb849a228a342f29/opt/cmssw/slc7_amd64_gcc10/external/gcc/10.2.0 --disable-multilib --disable-nls --disable-dssi --enable-languages=c,c++,fortran --enable-gnu-indirect-function --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-plugin --with-linker-hash-style=gnu --enable-linker-build-id --enable-ld=default --enable-lto --enable-gold=yes --with-gmp=/build/muz/g10/w/tmp/BUILDROOT/6af2184a61ae4a90cb849a228a342f29/opt/cmssw/slc7_amd64_gcc10/external/gcc/10.2.0 --with-mpfr=/build/muz/g10/w/tmp/BUILDROOT/6af2184a61ae4a90cb849a228a342f29/opt/cmssw/slc7_amd64_gcc10/external/gcc/10.2.0 --enable-bootstrap --with-mpc=/build/muz/g10/w/tmp/BUILDROOT/6af2184a61ae4a90cb849a228a342f29/opt/cmssw/slc7_amd64_gcc10/external/gcc/10.2.0 --with-isl=/build/muz/g10/w/tmp/BUILDROOT/6af2184a61ae4a90cb849a228a342f29/opt/cmssw/slc7_amd64_gcc10/external/gcc/10.2.0 --enable-checking=release --build=x86_64-unknown-linux-gnu --host=x86_64-unknown-linux-gnu --enable-libstdcxx-time=rt --enable-shared --disable-libgcj CC='gcc -fPIC' CXX='c++ -fPIC' CPP=cpp CXXCPP='c++ -E' CFLAGS=-I/build/muz/g10/w/tmp/BUILDROOT/6af2184a61ae4a90cb849a228a342f29/opt/cmssw/slc7_amd64_gcc10/external/gcc/10.2.0/tmp/sw/include CXXFLAGS=-I/build/muz/g10/w/tmp/BUILDROOT/6af2184a61ae4a90cb849a228a342f29/opt/cmssw/slc7_amd64_gcc10/external/gcc/10.2.0/tmp/sw/include LDFLAGS=-L/build/muz/g10/w/tmp/BUILDROOT/6af2184a61ae4a90cb849a228a342f29/opt/cmssw/slc7_amd64_gcc10/external/gcc/10.2.0/tmp/sw/lib
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 10.2.1 20200803 (GCC) 
+COMPILER_PATH=/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../libexec/gcc/x86_64-unknown-linux-gnu/10.2.1/:/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../libexec/gcc/:/cvmfs/sft.cern.ch/lcg/releases/gcc/10.3.0-f5826/x86_64-centos7/:/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../../x86_64-unknown-linux-gnu/bin/
+LIBRARY_PATH=/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/:/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/:/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../../x86_64-unknown-linux-gnu/lib/:/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_a057f' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../libexec/gcc/x86_64-unknown-linux-gnu/10.2.1/collect2 -plugin /cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../libexec/gcc/x86_64-unknown-linux-gnu/10.2.1/liblto_plugin.so -plugin-opt=/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../libexec/gcc/x86_64-unknown-linux-gnu/10.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/handerso/ccMxKusx.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z common-page-size=4096 -z max-page-size=4096 -o cmTC_a057f /lib/../lib64/crt1.o /lib/../lib64/crti.o /cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/crtbegin.o -L/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1 -L/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc -L/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../../x86_64-unknown-linux-gnu/lib -L/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../.. CMakeFiles/cmTC_a057f.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/crtend.o /lib/../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_a057f' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+gmake[1]: Leaving directory `/afs/cern.ch/user/h/handerso/GEANT4FINAL/TRD_Build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/cvmfs/sft.cern.ch/lcg/releases/gcc/10.3.0-f5826/x86_64-centos7/include]
+    add: [/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../../include/c++/10.2.1]
+    add: [/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../../include/c++/10.2.1/x86_64-unknown-linux-gnu]
+    add: [/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../../include/c++/10.2.1/backward]
+    add: [/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/include]
+    add: [/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/include-fixed]
+    add: [/usr/local/include]
+    add: [/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/../../include]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/cvmfs/sft.cern.ch/lcg/releases/gcc/10.3.0-f5826/x86_64-centos7/include] ==> [/cvmfs/sft.cern.ch/lcg/releases/gcc/10.3.0-f5826/x86_64-centos7/include]
+  collapse include dir [/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../../include/c++/10.2.1] ==> [/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/include/c++/10.2.1]
+  collapse include dir [/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../../include/c++/10.2.1/x86_64-unknown-linux-gnu] ==> [/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/include/c++/10.2.1/x86_64-unknown-linux-gnu]
+  collapse include dir [/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../../include/c++/10.2.1/backward] ==> [/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/include/c++/10.2.1/backward]
+  collapse include dir [/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/include] ==> [/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/lib/gcc/x86_64-unknown-linux-gnu/10.2.1/include]
+  collapse include dir [/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/include-fixed] ==> [/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/lib/gcc/x86_64-unknown-linux-gnu/10.2.1/include-fixed]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/../../include] ==> [/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/include]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/cvmfs/sft.cern.ch/lcg/releases/gcc/10.3.0-f5826/x86_64-centos7/include;/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/include/c++/10.2.1;/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/include/c++/10.2.1/x86_64-unknown-linux-gnu;/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/include/c++/10.2.1/backward;/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/lib/gcc/x86_64-unknown-linux-gnu/10.2.1/include;/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/lib/gcc/x86_64-unknown-linux-gnu/10.2.1/include-fixed;/usr/local/include;/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/include;/usr/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /afs/cern.ch/user/h/handerso/GEANT4FINAL/TRD_Build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/gmake cmTC_a057f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a057f.dir/build.make CMakeFiles/cmTC_a057f.dir/build]
+  ignore line: [gmake[1]: Entering directory `/afs/cern.ch/user/h/handerso/GEANT4FINAL/TRD_Build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_a057f.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/g++    -v -o CMakeFiles/cmTC_a057f.dir/CMakeCXXCompilerABI.cpp.o -c /cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/cmake/3.17.2/share/cmake-3.17/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/g++]
+  ignore line: [Target: x86_64-unknown-linux-gnu]
+  ignore line: [Configured with: ../configure --prefix=/build/muz/g10/w/tmp/BUILDROOT/6af2184a61ae4a90cb849a228a342f29/opt/cmssw/slc7_amd64_gcc10/external/gcc/10.2.0 --disable-multilib --disable-nls --disable-dssi --enable-languages=c,c++,fortran --enable-gnu-indirect-function --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-plugin --with-linker-hash-style=gnu --enable-linker-build-id --enable-ld=default --enable-lto --enable-gold=yes --with-gmp=/build/muz/g10/w/tmp/BUILDROOT/6af2184a61ae4a90cb849a228a342f29/opt/cmssw/slc7_amd64_gcc10/external/gcc/10.2.0 --with-mpfr=/build/muz/g10/w/tmp/BUILDROOT/6af2184a61ae4a90cb849a228a342f29/opt/cmssw/slc7_amd64_gcc10/external/gcc/10.2.0 --enable-bootstrap --with-mpc=/build/muz/g10/w/tmp/BUILDROOT/6af2184a61ae4a90cb849a228a342f29/opt/cmssw/slc7_amd64_gcc10/external/gcc/10.2.0 --with-isl=/build/muz/g10/w/tmp/BUILDROOT/6af2184a61ae4a90cb849a228a342f29/opt/cmssw/slc7_amd64_gcc10/external/gcc/10.2.0 --enable-checking=release --build=x86_64-unknown-linux-gnu --host=x86_64-unknown-linux-gnu --enable-libstdcxx-time=rt --enable-shared --disable-libgcj CC='gcc -fPIC' CXX='c++ -fPIC' CPP=cpp CXXCPP='c++ -E' CFLAGS=-I/build/muz/g10/w/tmp/BUILDROOT/6af2184a61ae4a90cb849a228a342f29/opt/cmssw/slc7_amd64_gcc10/external/gcc/10.2.0/tmp/sw/include CXXFLAGS=-I/build/muz/g10/w/tmp/BUILDROOT/6af2184a61ae4a90cb849a228a342f29/opt/cmssw/slc7_amd64_gcc10/external/gcc/10.2.0/tmp/sw/include LDFLAGS=-L/build/muz/g10/w/tmp/BUILDROOT/6af2184a61ae4a90cb849a228a342f29/opt/cmssw/slc7_amd64_gcc10/external/gcc/10.2.0/tmp/sw/lib]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 10.2.1 20200803 (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a057f.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../libexec/gcc/x86_64-unknown-linux-gnu/10.2.1/cc1plus -quiet -v -iprefix /cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/ -isystem /cvmfs/sft.cern.ch/lcg/releases/gcc/10.3.0-f5826/x86_64-centos7/include -D_GNU_SOURCE /cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/cmake/3.17.2/share/cmake-3.17/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_a057f.dir/CMakeCXXCompilerABI.cpp.o -version -fabi-version=0 -o /tmp/handerso/ccb2z5tv.s]
+  ignore line: [GNU C++14 (GCC) version 10.2.1 20200803 (x86_64-unknown-linux-gnu)]
+  ignore line: [	compiled by GNU C version 10.2.1 20200803  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../../x86_64-unknown-linux-gnu/include"]
+  ignore line: [ignoring duplicate directory "/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../../include/c++/10.2.1"]
+  ignore line: [ignoring duplicate directory "/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../../include/c++/10.2.1/x86_64-unknown-linux-gnu"]
+  ignore line: [ignoring duplicate directory "/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../../include/c++/10.2.1/backward"]
+  ignore line: [ignoring duplicate directory "/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/include"]
+  ignore line: [ignoring duplicate directory "/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/include-fixed"]
+  ignore line: [ignoring nonexistent directory "/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../../x86_64-unknown-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /cvmfs/sft.cern.ch/lcg/releases/gcc/10.3.0-f5826/x86_64-centos7/include]
+  ignore line: [ /cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../../include/c++/10.2.1]
+  ignore line: [ /cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../../include/c++/10.2.1/x86_64-unknown-linux-gnu]
+  ignore line: [ /cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../../include/c++/10.2.1/backward]
+  ignore line: [ /cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/include]
+  ignore line: [ /cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/include-fixed]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/../../include]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C++14 (GCC) version 10.2.1 20200803 (x86_64-unknown-linux-gnu)]
+  ignore line: [	compiled by GNU C version 10.2.1 20200803  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 1cbe278be5220506f693cd99f8934440]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a057f.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../../x86_64-unknown-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_a057f.dir/CMakeCXXCompilerABI.cpp.o /tmp/handerso/ccb2z5tv.s]
+  ignore line: [GNU assembler version 2.32 (x86_64-unknown-linux-gnu) using BFD version (GNU Binutils) 2.32]
+  ignore line: [COMPILER_PATH=/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../libexec/gcc/x86_64-unknown-linux-gnu/10.2.1/:/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../libexec/gcc/:/cvmfs/sft.cern.ch/lcg/releases/gcc/10.3.0-f5826/x86_64-centos7/:/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../../x86_64-unknown-linux-gnu/bin/]
+  ignore line: [LIBRARY_PATH=/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/:/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/:/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../../x86_64-unknown-linux-gnu/lib/:/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a057f.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [Linking CXX executable cmTC_a057f]
+  ignore line: [/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/cmake/3.17.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a057f.dir/link.txt --verbose=1]
+  ignore line: [/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/g++      -v CMakeFiles/cmTC_a057f.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_a057f ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/g++]
+  ignore line: [COLLECT_LTO_WRAPPER=/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../libexec/gcc/x86_64-unknown-linux-gnu/10.2.1/lto-wrapper]
+  ignore line: [Target: x86_64-unknown-linux-gnu]
+  ignore line: [Configured with: ../configure --prefix=/build/muz/g10/w/tmp/BUILDROOT/6af2184a61ae4a90cb849a228a342f29/opt/cmssw/slc7_amd64_gcc10/external/gcc/10.2.0 --disable-multilib --disable-nls --disable-dssi --enable-languages=c,c++,fortran --enable-gnu-indirect-function --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-plugin --with-linker-hash-style=gnu --enable-linker-build-id --enable-ld=default --enable-lto --enable-gold=yes --with-gmp=/build/muz/g10/w/tmp/BUILDROOT/6af2184a61ae4a90cb849a228a342f29/opt/cmssw/slc7_amd64_gcc10/external/gcc/10.2.0 --with-mpfr=/build/muz/g10/w/tmp/BUILDROOT/6af2184a61ae4a90cb849a228a342f29/opt/cmssw/slc7_amd64_gcc10/external/gcc/10.2.0 --enable-bootstrap --with-mpc=/build/muz/g10/w/tmp/BUILDROOT/6af2184a61ae4a90cb849a228a342f29/opt/cmssw/slc7_amd64_gcc10/external/gcc/10.2.0 --with-isl=/build/muz/g10/w/tmp/BUILDROOT/6af2184a61ae4a90cb849a228a342f29/opt/cmssw/slc7_amd64_gcc10/external/gcc/10.2.0 --enable-checking=release --build=x86_64-unknown-linux-gnu --host=x86_64-unknown-linux-gnu --enable-libstdcxx-time=rt --enable-shared --disable-libgcj CC='gcc -fPIC' CXX='c++ -fPIC' CPP=cpp CXXCPP='c++ -E' CFLAGS=-I/build/muz/g10/w/tmp/BUILDROOT/6af2184a61ae4a90cb849a228a342f29/opt/cmssw/slc7_amd64_gcc10/external/gcc/10.2.0/tmp/sw/include CXXFLAGS=-I/build/muz/g10/w/tmp/BUILDROOT/6af2184a61ae4a90cb849a228a342f29/opt/cmssw/slc7_amd64_gcc10/external/gcc/10.2.0/tmp/sw/include LDFLAGS=-L/build/muz/g10/w/tmp/BUILDROOT/6af2184a61ae4a90cb849a228a342f29/opt/cmssw/slc7_amd64_gcc10/external/gcc/10.2.0/tmp/sw/lib]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 10.2.1 20200803 (GCC) ]
+  ignore line: [COMPILER_PATH=/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../libexec/gcc/x86_64-unknown-linux-gnu/10.2.1/:/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../libexec/gcc/:/cvmfs/sft.cern.ch/lcg/releases/gcc/10.3.0-f5826/x86_64-centos7/:/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../../x86_64-unknown-linux-gnu/bin/]
+  ignore line: [LIBRARY_PATH=/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/:/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/:/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../../x86_64-unknown-linux-gnu/lib/:/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_a057f' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../libexec/gcc/x86_64-unknown-linux-gnu/10.2.1/collect2 -plugin /cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../libexec/gcc/x86_64-unknown-linux-gnu/10.2.1/liblto_plugin.so -plugin-opt=/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../libexec/gcc/x86_64-unknown-linux-gnu/10.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/handerso/ccMxKusx.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z common-page-size=4096 -z max-page-size=4096 -o cmTC_a057f /lib/../lib64/crt1.o /lib/../lib64/crti.o /cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/crtbegin.o -L/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1 -L/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc -L/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../../x86_64-unknown-linux-gnu/lib -L/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../.. CMakeFiles/cmTC_a057f.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/crtend.o /lib/../lib64/crtn.o]
+    arg [/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../libexec/gcc/x86_64-unknown-linux-gnu/10.2.1/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../libexec/gcc/x86_64-unknown-linux-gnu/10.2.1/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../libexec/gcc/x86_64-unknown-linux-gnu/10.2.1/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/handerso/ccMxKusx.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-zcommon-page-size=4096] ==> ignore
+    arg [-zmax-page-size=4096] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_a057f] ==> ignore
+    arg [/lib/../lib64/crt1.o] ==> ignore
+    arg [/lib/../lib64/crti.o] ==> ignore
+    arg [/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/crtbegin.o] ==> ignore
+    arg [-L/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1] ==> dir [/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1]
+    arg [-L/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc] ==> dir [/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc]
+    arg [-L/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../../lib64] ==> dir [/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../../x86_64-unknown-linux-gnu/lib] ==> dir [/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../../x86_64-unknown-linux-gnu/lib]
+    arg [-L/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../..] ==> dir [/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../..]
+    arg [CMakeFiles/cmTC_a057f.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/crtend.o] ==> ignore
+    arg [/lib/../lib64/crtn.o] ==> ignore
+  collapse library dir [/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1] ==> [/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/lib/gcc/x86_64-unknown-linux-gnu/10.2.1]
+  collapse library dir [/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc] ==> [/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/lib/gcc]
+  collapse library dir [/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../../lib64] ==> [/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../../../x86_64-unknown-linux-gnu/lib] ==> [/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/x86_64-unknown-linux-gnu/lib]
+  collapse library dir [/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/../lib/gcc/x86_64-unknown-linux-gnu/10.2.1/../../..] ==> [/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/lib]
+  implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+  implicit dirs: [/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/lib/gcc/x86_64-unknown-linux-gnu/10.2.1;/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/lib/gcc;/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/lib64;/lib64;/usr/lib64;/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/x86_64-unknown-linux-gnu/lib;/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/lib]
+  implicit fwks: []
+
+
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /afs/cern.ch/user/h/handerso/GEANT4FINAL/TRD_Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_31564/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_31564.dir/build.make CMakeFiles/cmTC_31564.dir/build
+gmake[1]: Entering directory `/afs/cern.ch/user/h/handerso/GEANT4FINAL/TRD_Build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_31564.dir/CheckIncludeFile.c.o
+/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/gcc    -o CMakeFiles/cmTC_31564.dir/CheckIncludeFile.c.o   -c /afs/cern.ch/user/h/handerso/GEANT4FINAL/TRD_Build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_31564
+/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/cmake/3.17.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_31564.dir/link.txt --verbose=1
+/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/gcc      CMakeFiles/cmTC_31564.dir/CheckIncludeFile.c.o  -o cmTC_31564 
+gmake[1]: Leaving directory `/afs/cern.ch/user/h/handerso/GEANT4FINAL/TRD_Build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the H5_HAVE_THREADSAFE exist passed with the following output:
+Change Dir: /afs/cern.ch/user/h/handerso/GEANT4FINAL/TRD_Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_72c3c/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_72c3c.dir/build.make CMakeFiles/cmTC_72c3c.dir/build
+gmake[1]: Entering directory `/afs/cern.ch/user/h/handerso/GEANT4FINAL/TRD_Build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_72c3c.dir/CheckSymbolExists.cxx.o
+/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/g++   -I/cvmfs/sft.cern.ch/lcg/releases/hdf5/1.12.2-9c138/x86_64-centos7-gcc10-opt/include -I/cvmfs/sft.cern.ch/lcg/releases/zlib/1.2.11-8af4c/x86_64-centos7-gcc10-opt/include   -o CMakeFiles/cmTC_72c3c.dir/CheckSymbolExists.cxx.o -c /afs/cern.ch/user/h/handerso/GEANT4FINAL/TRD_Build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+Linking CXX executable cmTC_72c3c
+/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/cmake/3.17.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_72c3c.dir/link.txt --verbose=1
+/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/g++       CMakeFiles/cmTC_72c3c.dir/CheckSymbolExists.cxx.o  -o cmTC_72c3c 
+gmake[1]: Leaving directory `/afs/cern.ch/user/h/handerso/GEANT4FINAL/TRD_Build/CMakeFiles/CMakeTmp'
+
+
+File /afs/cern.ch/user/h/handerso/GEANT4FINAL/TRD_Build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <H5pubconf.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef H5_HAVE_THREADSAFE
+  return ((int*)(&H5_HAVE_THREADSAFE))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the function XOpenDisplay exists in the /usr/lib64/libX11.so;/usr/lib64/libXext.so passed with the following output:
+Change Dir: /afs/cern.ch/user/h/handerso/GEANT4FINAL/TRD_Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_c05e1/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c05e1.dir/build.make CMakeFiles/cmTC_c05e1.dir/build
+gmake[1]: Entering directory `/afs/cern.ch/user/h/handerso/GEANT4FINAL/TRD_Build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c05e1.dir/CheckFunctionExists.c.o
+/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/gcc   -DCHECK_FUNCTION_EXISTS=XOpenDisplay   -o CMakeFiles/cmTC_c05e1.dir/CheckFunctionExists.c.o   -c /cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/cmake/3.17.2/share/cmake-3.17/Modules/CheckFunctionExists.c
+Linking C executable cmTC_c05e1
+/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/cmake/3.17.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c05e1.dir/link.txt --verbose=1
+/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/gcc  -DCHECK_FUNCTION_EXISTS=XOpenDisplay    CMakeFiles/cmTC_c05e1.dir/CheckFunctionExists.c.o  -o cmTC_c05e1  /usr/lib64/libX11.so /usr/lib64/libXext.so 
+gmake[1]: Leaving directory `/afs/cern.ch/user/h/handerso/GEANT4FINAL/TRD_Build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function gethostbyname exists passed with the following output:
+Change Dir: /afs/cern.ch/user/h/handerso/GEANT4FINAL/TRD_Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_8b33a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_8b33a.dir/build.make CMakeFiles/cmTC_8b33a.dir/build
+gmake[1]: Entering directory `/afs/cern.ch/user/h/handerso/GEANT4FINAL/TRD_Build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8b33a.dir/CheckFunctionExists.c.o
+/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/gcc   -DCHECK_FUNCTION_EXISTS=gethostbyname   -o CMakeFiles/cmTC_8b33a.dir/CheckFunctionExists.c.o   -c /cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/cmake/3.17.2/share/cmake-3.17/Modules/CheckFunctionExists.c
+Linking C executable cmTC_8b33a
+/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/cmake/3.17.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8b33a.dir/link.txt --verbose=1
+/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/gcc  -DCHECK_FUNCTION_EXISTS=gethostbyname    CMakeFiles/cmTC_8b33a.dir/CheckFunctionExists.c.o  -o cmTC_8b33a 
+gmake[1]: Leaving directory `/afs/cern.ch/user/h/handerso/GEANT4FINAL/TRD_Build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function connect exists passed with the following output:
+Change Dir: /afs/cern.ch/user/h/handerso/GEANT4FINAL/TRD_Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_86826/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_86826.dir/build.make CMakeFiles/cmTC_86826.dir/build
+gmake[1]: Entering directory `/afs/cern.ch/user/h/handerso/GEANT4FINAL/TRD_Build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_86826.dir/CheckFunctionExists.c.o
+/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/gcc   -DCHECK_FUNCTION_EXISTS=connect   -o CMakeFiles/cmTC_86826.dir/CheckFunctionExists.c.o   -c /cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/cmake/3.17.2/share/cmake-3.17/Modules/CheckFunctionExists.c
+Linking C executable cmTC_86826
+/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/cmake/3.17.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_86826.dir/link.txt --verbose=1
+/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/gcc  -DCHECK_FUNCTION_EXISTS=connect    CMakeFiles/cmTC_86826.dir/CheckFunctionExists.c.o  -o cmTC_86826 
+gmake[1]: Leaving directory `/afs/cern.ch/user/h/handerso/GEANT4FINAL/TRD_Build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function remove exists passed with the following output:
+Change Dir: /afs/cern.ch/user/h/handerso/GEANT4FINAL/TRD_Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_acf1e/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_acf1e.dir/build.make CMakeFiles/cmTC_acf1e.dir/build
+gmake[1]: Entering directory `/afs/cern.ch/user/h/handerso/GEANT4FINAL/TRD_Build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_acf1e.dir/CheckFunctionExists.c.o
+/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/gcc   -DCHECK_FUNCTION_EXISTS=remove   -o CMakeFiles/cmTC_acf1e.dir/CheckFunctionExists.c.o   -c /cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/cmake/3.17.2/share/cmake-3.17/Modules/CheckFunctionExists.c
+Linking C executable cmTC_acf1e
+/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/cmake/3.17.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_acf1e.dir/link.txt --verbose=1
+/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/gcc  -DCHECK_FUNCTION_EXISTS=remove    CMakeFiles/cmTC_acf1e.dir/CheckFunctionExists.c.o  -o cmTC_acf1e 
+gmake[1]: Leaving directory `/afs/cern.ch/user/h/handerso/GEANT4FINAL/TRD_Build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function shmat exists passed with the following output:
+Change Dir: /afs/cern.ch/user/h/handerso/GEANT4FINAL/TRD_Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_5f792/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_5f792.dir/build.make CMakeFiles/cmTC_5f792.dir/build
+gmake[1]: Entering directory `/afs/cern.ch/user/h/handerso/GEANT4FINAL/TRD_Build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5f792.dir/CheckFunctionExists.c.o
+/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/gcc   -DCHECK_FUNCTION_EXISTS=shmat   -o CMakeFiles/cmTC_5f792.dir/CheckFunctionExists.c.o   -c /cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/cmake/3.17.2/share/cmake-3.17/Modules/CheckFunctionExists.c
+Linking C executable cmTC_5f792
+/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/cmake/3.17.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5f792.dir/link.txt --verbose=1
+/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/gcc  -DCHECK_FUNCTION_EXISTS=shmat    CMakeFiles/cmTC_5f792.dir/CheckFunctionExists.c.o  -o cmTC_5f792 
+gmake[1]: Leaving directory `/afs/cern.ch/user/h/handerso/GEANT4FINAL/TRD_Build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function IceConnectionNumber exists in the ICE passed with the following output:
+Change Dir: /afs/cern.ch/user/h/handerso/GEANT4FINAL/TRD_Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_ef47a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ef47a.dir/build.make CMakeFiles/cmTC_ef47a.dir/build
+gmake[1]: Entering directory `/afs/cern.ch/user/h/handerso/GEANT4FINAL/TRD_Build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ef47a.dir/CheckFunctionExists.c.o
+/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/gcc   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber   -o CMakeFiles/cmTC_ef47a.dir/CheckFunctionExists.c.o   -c /cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/cmake/3.17.2/share/cmake-3.17/Modules/CheckFunctionExists.c
+Linking C executable cmTC_ef47a
+/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/cmake/3.17.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ef47a.dir/link.txt --verbose=1
+/cvmfs/cms.cern.ch/slc7_amd64_gcc10/external/gcc/10.2.0/bin/gcc  -DCHECK_FUNCTION_EXISTS=IceConnectionNumber    CMakeFiles/cmTC_ef47a.dir/CheckFunctionExists.c.o  -o cmTC_ef47a  -lICE 
+gmake[1]: Leaving directory `/afs/cern.ch/user/h/handerso/GEANT4FINAL/TRD_Build/CMakeFiles/CMakeTmp'
+
+
+
