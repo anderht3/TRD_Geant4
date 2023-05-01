@@ -1,3 +1,11 @@
+/*
+ * Author: Hannah Anderson
+ * Start Date: 03/12/2023
+ * Most Recent Changes: 05/01/2023
+ * 
+ */ 
+
+
 #include "PhysicsList.hh"
 
 #include "G4DecayPhysics.hh"

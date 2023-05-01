@@ -1,3 +1,15 @@
+/*
+ * Author: Hannah Anderson
+ * Start Date: 03/12/2023
+ * Most Recent Changes: 05/01/2023
+ * 
+ * Creates and stores the detectors
+ * and contains information about the
+ * materials used as well as methods
+ * to get information about the built
+ * layer, TRD, and other volumes
+ */
+
 #ifndef TRDDetectorConstruction_h
 #define TRDDetectorConstruction_h 1
 
@@ -12,12 +24,6 @@ namespace TRD
 {
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
-
-//  Creates and stores the detectors
-//  and contains information about the 
-//  materials used as well as methods
-//  to get information about the built 
-//  layer, TRD, and other volumes
 
 class DetectorConstruction : public G4VUserDetectorConstruction
 {

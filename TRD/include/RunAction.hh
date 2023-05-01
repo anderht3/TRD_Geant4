@@ -1,3 +1,12 @@
+/*
+ * Author: Hannah Anderson
+ * Start Date: 03/12/2023
+ * Most Recent Changes: 05/01/2023
+ * 
+ * Run action class that counts the number of events 
+ * and layer hits
+ */ 
+
 #ifndef TRDRunAction_h
 #define TRDRunAction_h 1
 
@@ -9,9 +18,6 @@
 
 namespace TRD
 {
-
-// Run action class that counts the number of events 
-// and layer hits
 
 class RunAction : public G4UserRunAction
 {

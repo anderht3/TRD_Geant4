@@ -1,3 +1,13 @@
+/*
+ * Author: Hannah Anderson
+ * Start Date: 03/12/2023
+ * Most Recent Changes: 05/01/2023
+ * 
+ * Tracks many variables that change during the different steps
+ * in the geant4 process and provides access to the current step
+ * and tracks associated with the step
+ */
+
 #ifndef TRDSteppingAction_h
 #define TRDSteppingAction_h 1
 
@@ -8,10 +18,6 @@
 
 namespace TRD
 {
-
-// Tracks many variables that change during the different steps
-// in the geant4 process and provides access to the current step
-// and tracks associated with the step
 
 class EventAction;
 

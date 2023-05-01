@@ -1,3 +1,22 @@
+/*
+ * Author: Hannah Anderson
+ * Start Date: 03/12/2023
+ * Most Recent Changes: 05/01/2023
+ *
+ *
+ * This class sets up the overarching application for the project. It also can be called
+ * from other classes and the structure of the subsequent classes is listed:
+ * The breakdown of the action hierarchy is: the runAction is the highest structure
+ * and each run has a certain number of events (particle beam activations). Each
+ * event includes new particles which are labeled as tracks. The events also occur
+ * in steps (ionization, transportation, etc). Tracks and steps can both be called
+ * in an event and can be called from each other as well - steps and tracks work 
+ * together
+ *
+ */
+
+
+
 #include "ActionInitialization.hh"
 #include "RunAction.hh"
 #include "EventAction.hh"
@@ -18,13 +37,6 @@ void ActionInitialization::BuildForMaster() const
 
 void ActionInitialization::Build() const
 {
-  // The breakdown of the action hierarchy is: the runAction is the highest structure
-  // and each run has a certain number of events (particle beam activations). Each
-  // event includes new particles which are labeled as tracks. The events also occur
-  // in steps (ionization, transportation, etc). Tracks and steps can both be called
-  // in an event and can be called from each other as well - steps and tracks work 
-  // together
- 
   auto runAction = new RunAction();
 
   SetUserAction(runAction);

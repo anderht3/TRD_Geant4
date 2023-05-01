@@ -1,3 +1,14 @@
+/*
+ * Author: Hannah Anderson
+ * Start Date: 03/12/2023
+ * Most Recent Changes: 05/01/2023
+ * 
+ * The primary generator creates a particle beam at a randomized
+ * point with specified energy and particle contents
+ * The default is a low beta proton generated at the top of the 
+ * TRD set up
+ */
+
 #ifndef TRDPrimaryGeneratorAction_h
 #define TRDPrimaryGeneratorAction_h 1
 
@@ -12,12 +23,6 @@ class G4Event;
 
 namespace TRD
 {
-
-// The primary generator creates a particle beam at a randomized 
-// point with specified energy and particle contents
-//
-// The default is a low beta proton generated at the top of the 
-// TRD set up
 
 class PrimaryGeneratorAction : public G4VUserPrimaryGeneratorAction
 {

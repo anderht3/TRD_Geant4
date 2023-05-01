@@ -1,6 +1,3 @@
-#
-# Macro file of "exampleB3.cc"
-#
 # Change the default number of workers (in multi-threading mode) 
 #/run/numberOfThreads 4
 #

@@ -1,3 +1,15 @@
+/*
+ * Author: Hannah Anderson
+ * Start Date: 03/12/2023
+ * Most Recent Changes: 05/01/2023
+ *
+ * Event action class
+ * In EndOfEventAction() there is collected information event per event
+ * from Hits Collections, and accumulated statistic for
+ * RunAction::EndOfRunAction() as well as many methods that will be
+ * used in the step class
+ */
+
 #ifndef TRDEventAction_h
 #define TRDEventAction_h 1
 
@@ -9,12 +21,6 @@ namespace TRD
 
 class RunAction;
 
-/// Event action class
-///
-/// In EndOfEventAction() there is collected information event per event
-/// from Hits Collections, and accumulated statistic for
-/// RunAction::EndOfRunAction() as well as many methods that will be
-/// used in the step class
 
 class EventAction : public G4UserEventAction
 {
