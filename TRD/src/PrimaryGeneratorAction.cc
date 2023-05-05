@@ -29,12 +29,13 @@ PrimaryGeneratorAction::PrimaryGeneratorAction()
   fParticleGun  = new G4ParticleGun(n_particle);
 
   // low beta generation
-  G4double beta = 0.02;
+  G4double beta = 0.1;
 
   //randomize beta values
   //G4double dbeta = 0.1;
   //beta += dbeta *(G4UniformRand()-0.5); 
-  G4double velocity = beta * 299792458 * m/s;
+  G4double c = 299792458;
+  G4double velocity = beta * c;
 
   //choose particle for gun
   G4ParticleTable* particleTable = G4ParticleTable::GetParticleTable();
@@ -43,8 +44,9 @@ PrimaryGeneratorAction::PrimaryGeneratorAction()
   G4double mass = particle->GetPDGMass();
 
   //choose initial energy
-  G4double momentum = velocity * mass / sqrt(1-beta*beta);
+  G4double momentum = velocity * mass / (sqrt(1-beta*beta)*c);
   G4double Ekin = sqrt(momentum * momentum + mass * mass) - mass;
+  G4cout << Ekin << G4endl;
 
   //initialize particle gun
   fParticleGun->SetParticleDefinition(particle);

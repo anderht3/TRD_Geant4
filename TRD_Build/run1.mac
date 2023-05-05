@@ -9,5 +9,5 @@
 #
 /run/beamOn 1
 #
-/tracking/verbose 0
-/run/beamOn 20
+#/tracking/verbose 0
+#/run/beamOn 20

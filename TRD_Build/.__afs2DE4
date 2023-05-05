@@ -1,0 +1,13 @@
+# Change the default number of workers (in multi-threading mode) 
+#/run/numberOfThreads 4
+#
+# Initialize kernel
+/run/initialize
+#
+#/control/verbose 2
+/tracking/verbose 0
+#
+/run/beamOn 1000000
+#
+#/tracking/verbose 0
+#/run/beamOn 20

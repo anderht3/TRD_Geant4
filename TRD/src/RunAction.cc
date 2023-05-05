@@ -55,18 +55,28 @@ void RunAction::BeginOfRunAction(const G4Run* run)
   man->CreateH1("Mult", "Total Event Multiplicity", 100, 0, 50);
   man->CreateH1("MultC", "Collision Event Multiplicity", 100, 0, 50);
   man->CreateH1("MultCH", "Charged Particle Collision Multiplicity", 100, 0, 20);
-  man->CreateH1("Pmom", "Pion Energy", 100, 0, 10000);
-  man->CreateH1("Kmom", "Kaon Energy", 100, 0, 10000);
-  man->CreateH1("PmomL", "Pion Energy Layers", 100, 0, 10000);
-  man->CreateH1("KmomL", "Kaon Energy Layers", 100, 0, 10000);  
+  man->CreateH1("Pmom", "Pion Energy", 100, 0, 20);
+  man->CreateH1("Kmom", "Kaon Energy", 100, 0, 20);
+  man->CreateH1("PmomL", "Pion Energy Layers", 100, 0, 20);
+  man->CreateH1("KmomL", "Kaon Energy Layers", 100, 0, 20);  
   man->CreateH1("LayP", "Charged Particles Layer Multiplicity", 100, 0, 20);
-  man->CreateH1("MultPL", "Pion Multiplicity at Layer", 100,0,20);
-  man->CreateH1("MultKL", "Kaon Multiplicity at Layer", 100,0,20);
-  man->CreateH1("PmomLALL", "Pion Momentum Layers ALL", 100, 0, 100000);
-  man->CreateH1("KmomLALL", "Kaon Momentum Layers ALL", 100, 0, 100000);
+  man->CreateH1("MultCHPL", "Charged Pion Multiplicity at Layer", 100,0,20);
+  man->CreateH1("MultCHKL", "Charged Kaon Multiplicity at Layer", 100,0,20);
+  man->CreateH1("PmomLALL", "Pion Momentum Layers ALL", 100, 0, 20);
+  man->CreateH1("KmomLALL", "Kaon Momentum Layers ALL", 100, 0, 20);
   man->CreateH1("PmultLALL", "Pion Multiplicity Layers ALL", 100, 0, 20);
   man->CreateH1("KmultLALL", "Kaon Multiplicity Layers ALL", 100, 0, 20);
-  man->CreateH1("PmomTot", "Layer Hits Pion Momentum", 100, 0, 10000);
+  man->CreateH1("PmomTot", "Layer Hits Pion Momentum", 100, 0, 20);
+  man->CreateH1("MultPL", "Pion Multiplicity at Layer", 100, 0 ,20);
+  man->CreateH1("MultKL", "Kaon Multiplicity at Layer", 100, 0, 20);
+  man->CreateH1("MultP", "Pion Secondary Multiplicity", 100,0, 20);
+  man->CreateH1("MultK", "Kaon Secondary Multiplicity", 100,0,20);
+  man->CreateH1("MomLP", "Pion Layer Momentum", 100, 0, 20);
+  man->CreateH1("NumPiP", "Multiplicity of Pion+", 100, 0, 20);
+  man->CreateH1("NumPiM", "Multiplicity of Pion-", 100, 0, 20);
+  man->CreateH1("NumPi0", "Multiplicity of Pion0", 100, 0, 20);
+  man->CreateH1("betaPi", "Beta of Pions at Layer", 100, 0, 1);
+
   //man->CreateH1("OneHit", "Events with only one layer hit", 100, 0, 20);
 
   //ntuples for annihilated particles

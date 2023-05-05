@@ -15,6 +15,7 @@
 
 #include "G4Step.hh"
 #include "G4AnalysisManager.hh"
+#include "G4SystemOfUnits.hh"
 
 namespace TRD
 {
@@ -49,6 +50,8 @@ void SteppingAction::UserSteppingAction(const G4Step* step )
   G4ThreeVector posStart = preStepPoint->GetPosition();
   G4ThreeVector pos = postStepPoint->GetPosition();
 
+  //G4cout << "start " << posStart[2] << " end " << pos[2] << G4endl;
+
   // check if particle annihilates in detector (first initial check)
   if(pos[2] < trd_end){
     annihilate = false;
@@ -58,39 +61,76 @@ void SteppingAction::UserSteppingAction(const G4Step* step )
   G4int numPionALL = 0;
   G4int numKaonALL = 0;
 
+
   // energy at the beginning and end of step
-  G4double beginEnergy = preStepPoint->GetKineticEnergy();
-  G4double endEnergy = postStepPoint->GetKineticEnergy();
+  G4double beginEnergy = preStepPoint->GetKineticEnergy() ;
+  G4double endEnergy = postStepPoint->GetKineticEnergy() / GeV;
   //G4cout << "End energy: " << endEnergy << G4endl;
-  G4double totalEnergy = beginEnergy - endEnergy;
-  //G4cout << "total energy: " << totalEnergy << G4endl;
+  G4double totalEnergy = (beginEnergy - endEnergy) ;
+  //G4cout << "Begin energy: " << beginEnergy << G4endl;
   G4Event *event = G4EventManager::GetEventManager()->GetNonconstCurrentEvent();
 
   // determine what particle this step is looking at
   G4Track *track = step->GetTrack();
   G4int parentID = track->GetParentID();
   G4int particle = track->GetDefinition()->GetPDGEncoding();
+  G4int trackID = track->GetTrackID();
+
+  G4double fullEnergy = track->GetTotalEnergy();
+
+  /*
+  if(parentID == 0){
+    G4cout << "Start " << posStart << " and end " << pos << G4endl;
+  }
+  */
+ 
+  G4double stepNum = track->GetCurrentStepNumber();
+  //G4cout << "Step Number " << stepNum << " particle number " << trackID << G4endl;
 
   // get particle momentum from track
   G4ThreeVector momentum = track->GetMomentum();
   G4double momentumTot = sqrt(momentum[0] * momentum[0] + momentum [1] * momentum[1] + momentum[2] * momentum[2]);
+  G4double c = 299792458;
+  G4double mass = track->GetDefinition()->GetPDGMass();
+  G4double beta = momentumTot/fullEnergy;
 
+  G4double velocity = track->GetVelocity() /(m/s);
+  G4double beta2 = velocity/c;
+  G4double gamma = sqrt(1-beta2 * beta2);
+
+  //G4cout << "Beta " << bet << G4endl;
+  //G4cout << "Velocity: " << velocity << G4endl;
+  //G4cout << "gamma " << gamma << G4endl;
   //G4cout << "Momentum: " << momentumTot << G4endl;
 
   // get the secondaries from the step
   auto secondary = step ->GetSecondaryInCurrentStep();
   G4int numSecondary = (*secondary).size();
 
-  G4int numCharged = 0;
-  G4int numPionLay = 0;
-  G4int numKaonLay = 0;
-  G4int numChargedLay = 0;
-    
+  // storage of secondaries for pions and kaons
+  G4int numPionSec = 0;   //total pion secondaries
+  G4int numKaonSec = 0;   //total kaon secondaries
+  G4int numPionLay = 0;   //total pion secondaries that reach the layer
+  G4int numKaonLay = 0;   //total kaon secondaries that reach the layer
+  G4int numCharged = 0;   //total charged secondaries
+  G4int numPionCHLay = 0; //charged pion secondaries that reach the layer
+  G4int numKaonCHLay = 0; //charged kaon secondaries that reach the layer
+  G4int numChargedLay = 0;//charged particles that reach the layer
+  //G4int numPandKsec = 0;  
+  G4int numPiP = 0;       //number of pi + secondaries
+  G4int numPiM = 0;       //number of pi - secondaries
+  G4int numPi0 = 0;       //number of pi 0 secondaries
+
+  //G4cout << "Total momentum: " << momentumTot << " Full energy " << fullEnergy << " kinetic energy " << beginEnergy << " partcle mass " << mass << G4endl;
+
   // PDG encodings for pions and kaons
   G4int pionPlus = 211;
   G4int pionMin = -211;
+  G4int pionN = 111;
   G4int kaonPlus = 321;
   G4int kaonMin = -321;
+  G4int kaonL = 130;
+  G4int kaonS = 310;
 
   // get information for all secondary particles
   if(numSecondary && parentID == 0){
@@ -98,8 +138,7 @@ void SteppingAction::UserSteppingAction(const G4Step* step )
       auto secstep = (*secondary)[i];
       G4int name = secstep->GetDefinition()->GetPDGEncoding();
       G4double kenergy = secstep->GetKineticEnergy();
-      
-      //G4cout << "Position of the secondary: " << secpos[2] << G4endl;
+
       // used to determine particle type in ntuple (not currently in use)
       G4int number = 0;
 
@@ -107,18 +146,28 @@ void SteppingAction::UserSteppingAction(const G4Step* step )
       if(name == pionPlus){
         number +=2;
         numCharged ++;
+        numPionSec ++;
+        numPiP ++;
       }
 
       else if(name == pionMin){
         number +=3;
         numCharged ++;
+        numPionSec ++;
+        numPiM ++;
       }
 
       else if(name == 111){
         number +=4;
+        numPionSec ++;
+        numPi0 ++;
       }
       else if(name == kaonPlus || name == kaonMin){
         numCharged++;
+        numKaonSec++;
+      }
+      else if (name == kaonS || name == kaonL){
+        numKaonSec++;
       }
       man->FillNtupleIColumn(1,2, number);
 
@@ -141,15 +190,15 @@ void SteppingAction::UserSteppingAction(const G4Step* step )
   // If the particle is a secondary from primary 
   if(parentID == 1){
     G4int layer = 0;
-   
-    if(particle == pionPlus || particle == pionMin){
-        if(step->IsFirstStepInVolume()){
-          man->FillH1(3, beginEnergy); // fill energy histogram for pion if step is the first in the volume
+    if(particle == pionPlus || particle == pionMin || particle == pionN){
+        if(stepNum == 1){
+          man->FillH1(3, beginEnergy); // fill energy histogram for pion if step is the first in the volume       
+          eventAct->MomentumCheck(momentum[2]); 
         }
     }
     else if(particle == kaonPlus || particle == kaonMin){
 
-        if(step->IsFirstStepInVolume()){
+        if(stepNum == 1){
           man->FillH1(4, beginEnergy); // fill energy hist for kaon if step is first
         }
 
@@ -171,37 +220,47 @@ void SteppingAction::UserSteppingAction(const G4Step* step )
       if(particle == pionPlus || particle == pionMin){
         //G4cout << "pion found" << G4endl;
         numChargedLay ++;
+        numPionCHLay ++;
         numPionLay ++;
-        if(step->IsFirstStepInVolume()){
+        if(stepNum == 1){
           man->FillH1(5, beginEnergy);
           man->FillH1(14, momentumTot);
         }
+      }
+      else if(particle == pionN){
+        numPionLay ++;
       }
       //check if particle is a kaon
       else if(particle == kaonPlus || particle == kaonMin){
         numChargedLay++;
         numKaonLay ++;
-      
-        if(step->IsFirstStepInVolume()){
+        numKaonCHLay ++;
+        if(stepNum == 1){
           man->FillH1(6, beginEnergy);
         }
-
+      
+      }
+      else if(particle == kaonS || particle == kaonL){
+        numKaonLay ++;
       } 
     }
     man->FillNtupleIColumn(2,4, layer);
   }
 
   // check if pions/kaons in general made it to the end of the layer
-  if (pos[2] < -1100){
+  if (posStart[2] > -850 && pos[2] < -850){
+    //G4cout << "Made it past the layer only once" << G4endl;
     if(particle == pionPlus || particle == pionMin){
         numPionALL +=1;
-        if(step->IsFirstStepInVolume()){
+        eventAct->MomentumStore(momentumTot);
+        eventAct->BetaStore(beta);
+        if(stepNum == 1){
           man->FillH1(10, beginEnergy);
         }
     }
     else if(particle == kaonPlus || particle == kaonMin){
         numKaonALL +=1;
-        if(step->IsFirstStepInVolume()){
+        if(stepNum == 1){
           man->FillH1(11, beginEnergy);
         }
 
@@ -219,13 +278,20 @@ void SteppingAction::UserSteppingAction(const G4Step* step )
   //add information to the eventAction
   eventAct->LayerMult(numChargedLay);
   eventAct->SumChargedSecSize(numCharged);
-  eventAct->PionMult(numPionLay);
-  eventAct->KaonMult(numKaonLay);
+  eventAct->PionCHMultLAY(numPionCHLay);
+  eventAct->KaonCHMultLAY(numKaonCHLay);
   eventAct->PionMultALL(numPionALL);
   eventAct->KaonMultALL(numKaonALL);  
+  eventAct->PionMultLAY(numPionLay);
+  eventAct->KaonMultLAY(numKaonLay);
+  eventAct->PionMult(numPionSec);
+  eventAct->KaonMult(numKaonSec);
+  eventAct->NumPiP(numPiP);
+  eventAct->NumPiM(numPiM);
+  eventAct->NumPi0(numPi0);
 
   // final check on annihilation
-  if(parentID == 0 && annihilate && endEnergy < 10.){
+  if(parentID == 0 && annihilate && endEnergy < 0.01){
     eventAct->SetCollision();
     man->FillNtupleDColumn(0,1,pos[0]);
     man->FillNtupleDColumn(0,2,pos[1]);

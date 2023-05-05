@@ -42,9 +42,19 @@ void EventAction::BeginOfEventAction(const G4Event* /*evt*/)
    fSecSize = 0;       //num of secondaries
    fCollision = false; //annihilate
    fLayMult = 0;       //mult at layer
-   fpLayMult = 0;      //pion mult at layer
-   fkLayMult = 0;      //kaon mult at layer
+   fpCHLayMult = 0;      //pion mult at layer
+   fkCHLayMult = 0;      //kaon mult at layer
    fChSecSize = 0;     //charged particle secondaries
+   fpLayMult = 0;
+   fkLayMult = 0;
+   fpMult = 0;
+   fkMult = 0;
+   fmompion = 0;
+   fPiP = 0;
+   fPiM = 0;
+   fPi0 = 0;
+   fbeta = 0;
+   fmomcheck = 0;
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
@@ -84,6 +94,9 @@ void EventAction::EndOfEventAction(const G4Event* evt )
   // Total edep deposited in layer (optional)
   G4double totEdep = 0.;
 
+  //get root file information
+  G4AnalysisManager *man = G4AnalysisManager::Instance();
+
   // Layer hits event map
   evtMap = (G4THitsMap<G4double>*)(HCE->GetHC(fLayer_ID));
 
@@ -101,26 +114,37 @@ void EventAction::EndOfEventAction(const G4Event* evt )
   if (fpLayMultALL > 0)  fRunAction->CountPion();
   
   // Increment if one pion hit layer
-  if (fpLayMultALL == 1) fRunAction->CountOne();
+  if (fpLayMultALL == 1){
+    fRunAction->CountOne();
+    man->FillH1(19,fmompion);
+    man->FillH1(23, fbeta);
+  }
+  //G4cout << "Number of secondaries " << fSecSize << G4endl;
+  //G4cout << "Number of Pion secondaries: " << fpMult << G4endl;
+  //G4cout << "Momentum in the z direction "<< fmomcheck << G4endl;
 
   //Get event ID
   const G4Event *event_man = G4RunManager::GetRunManager()->GetCurrentEvent();
-  G4int event = event_man->GetEventID();
-
-  //get root file information
-  G4AnalysisManager *man = G4AnalysisManager::Instance();
-  
-
+  G4int event = event_man->GetEventID(); 
+  //G4cout << fCollision << G4endl;
   //fill ntuples and histogram for primary annihilated
   if(fCollision && fPrim){
     //man->FillH1(1,fSecSize);
     man->FillH1(1, fSecSize);
     man->FillH1(2, fChSecSize);
     man->FillH1(7, fLayMult);
-    man->FillH1(8, fpLayMult);
-    man->FillH1(9, fkLayMult);
+    man->FillH1(8, fpCHLayMult);
+    man->FillH1(9, fkCHLayMult);
     man->FillH1(12, fpLayMultALL);
     man->FillH1(13, fkLayMultALL);
+    man->FillH1(15, fpLayMult);
+    man->FillH1(16, fkLayMult);
+    man->FillH1(17, fpMult);
+    man->FillH1(18, fkMult);
+    man->FillH1(20, fPiP);
+    man->FillH1(21, fPiM);
+    man->FillH1(22, fPi0);
+    //man->FillH1(23, fbeta);
     man->FillNtupleDColumn(0,4,fEdep);
     man->FillNtupleIColumn(0,0,event);
     man->AddNtupleRow(0);

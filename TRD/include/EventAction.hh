@@ -39,23 +39,41 @@ class EventAction : public G4UserEventAction
     void LayerFound() {fLayer = true;};                                     // Set to true if a secondary particle in the event reaches the layer
     void NoACC() {fNoACC = true;};                                          // Set to true if the ACC is not hit by the primary
     void LayerMult(G4int dLayMult ) {fLayMult += dLayMult;};                // Add to the number of secondaries hit the layer
-    void PionMult(G4int dpLayMult) {fpLayMult += dpLayMult;};               // Add to the number of secondary pions that hit the layer
-    void KaonMult(G4int dkLayMult) {fkLayMult += dkLayMult;};               // Add to the number of secondary kaons that hit the layer
+    void PionCHMultLAY(G4int dpLayCHMult) {fpCHLayMult += dpLayCHMult;};               // Add to the number of secondary pions that hit the layer
+    void KaonCHMultLAY(G4int dkLayCHMult) {fkCHLayMult += dkLayCHMult;};               // Add to the number of secondary kaons that hit the layer
     void PionMultALL(G4int dpLayMultALL) {fpLayMultALL += dpLayMultALL;};   // Add to the total number of secondary pions produced
     void KaonMultALL(G4int dkLayMultALL) {fkLayMultALL += dkLayMultALL;};   // Add to the total number of secondary kaons produced
-
-
+    void PionMultLAY(G4int dpLayMult) {fpLayMult += dpLayMult;};
+    void PionMult(G4int dpMult) {fpMult += dpMult;};
+    void KaonMultLAY(G4int dkLayMult) {fkLayMult += dkLayMult;};
+    void KaonMult(G4int dkMult) {fkMult += dkMult;};
+    void MomentumStore(G4double dmompion) {fmompion += dmompion;};
+    void NumPiP(G4int dPiP) {fPiP += dPiP;};
+    void NumPiM(G4int dPiM) {fPiM += dPiM;};
+    void NumPi0(G4int dPi0) {fPi0 += dPi0;};
+    void BetaStore(G4double dbeta) {fbeta += dbeta;};
+    void MomentumCheck(G4double dmomcheck) {fmomcheck += dmomcheck;};
 
   private:
     RunAction* fRunAction = nullptr;             // Call the run action
     G4int fTRD_ID = -1;                          // Check if the TRD exists
     G4int fLayer_ID = -1;                        // Check if the layer exists
     
+    G4double fmomcheck = 0;
+    G4double fbeta = 0;
+    G4int fPiP = 0;
+    G4int fPiM = 0;
+    G4int fPi0 = 0;
+    G4double fmompion = 0;
+    G4int fpLayMult = 0;
+    G4int fkLayMult = 0;
+    G4int fpMult = 0;
+    G4int fkMult = 0;
     G4int fpLayMultALL = 0;                      // Total multiplicity of pions
     G4int fkLayMultALL = 0;                      // Total multiplicity of kaons
     G4int fLayMult = 0;                          // Multiplicity of secondaries at the layer
-    G4int fpLayMult = 0;                         // Multiplicity of pions at the layer
-    G4int fkLayMult = 0;                         // Multiplicity of kaons at the layer
+    G4int fpCHLayMult = 0;                         // Multiplicity of pions at the layer
+    G4int fkCHLayMult = 0;                         // Multiplicity of kaons at the layer
     G4int fChSecSize = 0;                        // Number of charged secondary particles
     G4bool fLayer = false;                       // Layer hit
     G4bool fNoACC = false;                       // No ACC hit
